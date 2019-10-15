@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api</title>
+</head>
+<body>
+
+    <h2>Buscar Empleado</h2>
+    <input type="text" id="campo" placeholder="Id Usuario"></input>
+    <button onclick="filtrar()">
+        Buscar
+    </button>
+
+    <h2>Eliminar Empleado</h2>
+    <input type="text" id="campoEliminar" placeholder="Id Usuario"></input>
+    <button onclick="eliminar()">
+        Eliminar
+    </button>
+    
+
+
+    <h2>Listar Empleados</h2>
+    <button onclick="get('empleados')">
+        Empleados
+    </button>
+    <ul id="resultados">
+    </ul>
+
+   
+    <form >
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <input type="text" id="edad" placeholder="edad">
+        <button onclick="post()">
+            Send
+        </button>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
